@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>    <html ng-app="airbender" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>     <html ng-app="airbender" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>     <html ng-app="airbender" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html
+ ng-app="myAirbenderApp"
+ ab-init
+ ab-set-site-title="De Finibis Bonorum et Malorum"
+ class="no-js"
+> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ siteTitle }} </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Remote stylesheets. --> 
+  <link rel="stylesheet" href="http://localhost:8090/bower/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="http://localhost:8090/bower/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="http://localhost:8090/bower/nvd3/nv.d3.min.css">
+  <link rel="stylesheet" href="http://localhost:8090/bower/highlightjs/styles/monokai.css">
+
+  <!-- Local stylesheets. -->
+  <!-- A bootstrap theme chosen by the developer. -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom styling. -->
+  <link rel="stylesheet" href="css/myStyle.css">
+
+  <!-- Modernizer served from the airbender server. -->
+  <script src="http://localhost:8090/bower/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+  <p class="browsehappy">
+    You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+    your experience.
+  </p>
+  <![endif]-->
+
+  <!-- The navbar, in a separate file. -->
+  <ng-include src="'/navbar.html'"></ng-include>
+
+  <!-- The main container to be filled by the router. -->
+  <div class="container">
+    <div ui-view="top-level"/>
+  </div> <!-- .container -->
+
+  <!-- The dependencies. We are loading them individually for now, but can
+       have the server pack them together later. Those will eventually be
+       served via a CDN probably. -->
+
+  <!-- 3rd party -->
+  <script src="http://localhost:8090/bower/jquery/jquery.min.js"></script>
+  <script src="http://localhost:8090/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="http://localhost:8090/bower/marked/lib/marked.js"></script>
+  <script src="http://localhost:8090/bower/angular/angular.min.js"></script>
+  <script src="http://localhost:8090/bower/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="http://localhost:8090/bower/underscore/underscore-min.js"></script>
+  <script src="http://localhost:8090/bower/d3/d3.min.js"></script>
+  <script src="http://localhost:8090/bower/nvd3/nv.d3.min.js"></script>
+  <script src="http://localhost:8090/bower/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+  <script src="http://localhost:8090/bower/highlightjs/highlight.pack.js"></script>
+  <!-- Airbender -->
+  <script src="http://localhost:8090/app/data/data.js"></script>
+  <script src="http://localhost:8090/app/graphs/graphDirectives.js"></script>
+  <script src="http://localhost:8090/app/article/articleDirectives.js"></script>
+  <script src="http://localhost:8090/app/appState/appState.js"></script>
+  <script src="http://localhost:8090/app/topLevel/topLevelDirectives.js"></script>
+  <script src="http://localhost:8090/app/topLevel/topLevelControllers.js"></script>
+  <script src="http://localhost:8090/airbender.js"></script>
+  
+  <!-- The developer's own Javascript, served from the developer's server. -->
+  <script src="/scripts/myApp.js"></script>
+
+</body>
+<!-- file: index.html -->

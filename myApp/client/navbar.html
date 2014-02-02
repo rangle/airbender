@@ -1,0 +1,35 @@
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">{{ siteTitle }}</a>
+      </div> <!-- .navbar-header -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active" ab-link destination="liber-primus" label="Liber Primus"/>
+          <li ab-link destination="liber-segundus" label="Liber Segundus"/>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Diversis Libris <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li ab-link destination="liber-tertius" label="Liber Tertius"/>
+              <li ab-link destination="liber-quartus" label="Liber Quartus"/>
+              <li ab-link destination="liber-quintus" label="Liber Quintus"/>
+              <li class="divider"></li>
+              <li class="dropdown-header">Miscellaneae</li>
+              <li ab-link destination="de-hoc-blog" label="De Hoc Blog"/>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="./">Default</a></li>
+          <li><a href="../navbar-static-top/">Static top</a></li>
+          <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+        </ul>
+      </div> <!-- .navbar-collapse -->
+    </div> <!-- .container -->
+  </div> <!-- .navbar -->

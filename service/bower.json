@@ -1,0 +1,20 @@
+{
+  "name": "airbender",
+  "version": "0.0.1",
+  "authors": [
+    "rangle.io"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "html5-boilerplate": "4.1.0",
+    "angular": "~1.2.1",
+    "font-awesome": "~4.0.3",
+    "bootstrap": "~3.0.2",
+    "underscore": "1.5.2",
+    "angular-ui-router": "0.2.0"
+  },
+  "resolutions": {
+    "d3": "3.3.11"
+  }
+}
