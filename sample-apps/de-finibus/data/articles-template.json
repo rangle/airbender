@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "literas",
+    "title": "Literas Vocent"
+  },
+  {
+    "app": "de-finibus",
+    "slug": "torquatus",
+    "title": "Solum Torquatus"
+  },
+  {
+    "app": "de-finibus",
+    "slug": "epicurus",
+    "title": "Aristippi vel Epicuri"
+  },
+  {
+    "app": "de-finibus",
+    "slug": "stoici",
+    "title": "Philosophis Stoici"
+  }
+]

@@ -1,8 +1,10 @@
 'use strict';
 
-angular.module('airbender.core.router', ['ui.router'])
+angular.module('airbender.core.router', [
+  'ui.router'
+])
 
-.config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
+.config(
   function ($urlRouterProvider, $stateProvider, $locationProvider) {
     'use strict';
 
@@ -10,13 +12,13 @@ angular.module('airbender.core.router', ['ui.router'])
     $locationProvider.html5Mode(false);
 
     $urlRouterProvider
-      .when('/', '/article/liber-primus')
-      .otherwise('/article/liber-primus');
+      .when('/', '/article/literas')
+      .otherwise('/article/literas');
 
     $stateProvider.state('article', {
-      url: '/article/{articleId}',
+      url: '/article/{slug}',
       resolves: {
-        foo: function($stateParams) {
+        foo: function ($stateParams) {
           console.log('Transitioning to ' + $stateParams.articleId);
         }
       },
@@ -28,19 +30,18 @@ angular.module('airbender.core.router', ['ui.router'])
       }
     });
   }
-])
+)
 
-.service('abRouter', ['$stateParams', '$state',
+.service('abRouter',
   function ($stateParams, $state) {
-    'use strict';
     var service = {};
-    service.getArticleId = function () {
-      return $stateParams.articleId;
+    service.getArticleSlug = function () {
+      return $stateParams.slug;
     };
-    service.goToArticle = function (articleId) {
-      $stateParams.articleId = articleId;
+    service.goToArticle = function (slug) {
+      $stateParams.slug = slug;
       $state.go('article');
     };
     return service;
   }
-]);
+);

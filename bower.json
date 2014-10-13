@@ -12,7 +12,8 @@
     "font-awesome": "~4.0.3",
     "bootstrap": "~3.0.2",
     "underscore": "1.5.2",
-    "angular-ui-router": "0.2.0"
+    "angular-ui-router": "0.2.0",
+    "koast-angular": "~0.0.0"
   },
   "resolutions": {
     "d3": "3.3.11"

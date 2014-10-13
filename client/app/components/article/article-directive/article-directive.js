@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('airbender.components.article.article-directive', [
-  'airbender-data'
+  'airbender.core.data.articles'
 ])
 
-.directive('abArticle', function (data) {
+.directive('abArticle', function (articles) {
 
   var directive = {
     scope: true,
@@ -14,8 +14,8 @@ angular.module('airbender.components.article.article-directive', [
 
   directive.compile = function compile(tElement, tAttrs) {
     return function link(scope, iElement, iAttrs, controller, linker) {
-      var articleId = scope.$eval(tAttrs.abArticle);
-      data.getArticle(articleId)
+      var slug = scope.$eval(tAttrs.abArticle);
+      articles.getArticle(slug)
         .then(function (article) {
           var childScope = scope.$new();
           childScope.title = article.title;

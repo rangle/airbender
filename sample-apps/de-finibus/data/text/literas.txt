@@ -1,3 +1,5 @@
+## Non eram
+
 Non eram nescius, <b>Brute</b>, cum, quae summis ingeniis exquisitaque
 doctrina philosophi *Graeco* sermone tractavissent, ea
 [Latini](http://la.wikipedia.org/wiki/Latini) litteris mandaremus, fore ut hic
@@ -6,9 +8,12 @@ non admodum indoctis, totum hoc displicet philosophari. quidam autem non tam
 id reprehendunt, si remissius agatur, sed tantum studium tamque multam operam
 ponendam in eo non arbitrantur. erunt etiam, et ii quidem eruditi Graecis
 litteris, contemnentes Latinas, qui se dicant in Graecis legendis operam malle
-consumere. postremo aliquos futuros suspicor, qui me ad alias litteras vocent,
-genus hoc scribendi, etsi sit elegans, personae tamen et dignitatis esse
-negent.
+consumere.
+
+## Postremo
+
+Postremo aliquos futuros suspicor, qui me ad alias litteras vocent, genus hoc
+scribendi, etsi sit elegans, personae tamen et dignitatis esse negent.
 
 <div ab-line-chart>
   <div ab-series series-name='Bonum'> 
@@ -48,7 +53,11 @@ Contra quos omnis dicendum breviter existimo:
   meliore, quo maior sit, mediocritatem desiderent.
 
 Sive enim ad sapientiam perveniri potest, non paranda nobis solum ea, sed
-fruenda etiam sapientia est; sive hoc difficile est, tamen nec modus est ullus
+fruenda etiam sapientia est.
+
+## Sive hoc!
+
+Sive hoc difficile est, tamen nec modus est ullus
 investigandi veri, nisi inveneris, et quaerendi defatigatio turpis est, cum
 id, quod quaeritur, sit pulcherrimum. etenim si delectamur, cum scribimus,
 quis est tam invidus, qui ab eo nos abducat?
@@ -85,6 +94,8 @@ nostra ignota sunt. an 'Utinam ne in nemore . . .' nihilo minus legimus quam
 hoc idem Graecum, quae autem de bene beateque vivendo a Platone disputata
 sunt, haec explicari non placebit Latine?
 
+## Intereptum.
+
 Quid? si nos non interpretum fungimur munere, sed tuemur ea, quae dicta sunt
 ab iis quos probamus, eisque nostrum iudicium et nostrum scribendi ordinem
 adiungimus, quid habent, cur Graeca anteponant iis, quae et splendide dicta
@@ -109,6 +120,8 @@ et Rutilius multo etiam magis, quorum ille iudicium reformidans Tarentinis ait
 se et Consentinis et Siculis scribere. facete is quidem, sicut alia; sed neque
 tam docti tum erant, ad quorum iudicium elaboraret, et sunt illius scripta
 leviora, ut urbanitas summa appareat, doctrina mediocris.
+
+## Abhorreant a Latinis
 
 Ego autem quem timeam lectorem, cum ad te ne Graecis quidem cedentem in
 philosophia audeam scribere? quamquam a te ipso id quidem facio provocatus

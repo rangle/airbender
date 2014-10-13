@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html
  ng-app="myAirbenderApp"
  ab-init
- ab-set-site-title="De Finibis Bonorum et Malorum"
+ ab-set-site-title="De Finibus Bonorum et Malorum"
  class="no-js"
 > <!--<![endif]-->
 <head>
@@ -16,19 +16,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Remote stylesheets. --> 
-  <link rel="stylesheet" href="http://localhost:8090/bower/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="http://localhost:8090/bower/html5-boilerplate/css/main.css">
-  <link rel="stylesheet" href="http://localhost:8090/bower/nvd3/nv.d3.min.css">
-  <link rel="stylesheet" href="http://localhost:8090/bower/highlightjs/styles/monokai.css">
+  <link rel="stylesheet" href="http://localhost:9000/bower/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="http://localhost:9000/bower/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="http://localhost:9000/bower/nvd3/nv.d3.min.css">
+  <link rel="stylesheet" href="http://localhost:9000/bower/highlightjs/styles/monokai.css">
 
   <!-- Local stylesheets. -->
   <!-- A bootstrap theme chosen by the developer. -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <!-- Custom styling. -->
-  <link rel="stylesheet" href="css/myStyle.css">
+  <link rel="stylesheet" href="css/my-style.css">
 
   <!-- Modernizer served from the airbender server. -->
-  <script src="http://localhost:8090/bower/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="http://localhost:9000/bower/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -52,18 +52,20 @@
        served via a CDN probably. -->
 
   <!-- 3rd party -->
-  <script src="http://localhost:8090/bower/jquery/jquery.min.js"></script>
-  <script src="http://localhost:8090/bower/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="http://localhost:8090/bower/marked/lib/marked.js"></script>
-  <script src="http://localhost:8090/bower/angular/angular.js"></script>
-  <script src="http://localhost:8090/bower/angular-ui-router/release/angular-ui-router.js"></script>
-  <script src="http://localhost:8090/bower/underscore/underscore-min.js"></script>
-  <script src="http://localhost:8090/bower/d3/d3.min.js"></script>
-  <script src="http://localhost:8090/bower/nvd3/nv.d3.min.js"></script>
-  <script src="http://localhost:8090/bower/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
-  <script src="http://localhost:8090/bower/highlightjs/highlight.pack.js"></script>
+  <script src="http://localhost:9000/bower/jquery/jquery.min.js"></script>
+  <script src="http://localhost:9000/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="http://localhost:9000/bower/marked/lib/marked.js"></script>
+  <script src="http://localhost:9000/bower/angular/angular.js"></script>
+  <script src="http://localhost:9000/bower/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="http://localhost:9000/bower/lodash/dist/lodash.js"></script>
+  <script src="http://localhost:9000/bower/d3/d3.min.js"></script>
+  <script src="http://localhost:9000/bower/nvd3/nv.d3.min.js"></script>
+  <script src="http://localhost:9000/bower/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+  <script src="http://localhost:9000/bower/highlightjs/highlight.pack.js"></script>
+  <script src="http://localhost:9000/bower/koast-angular/dist/koast.js"></script>
+
   <!-- Airbender -->
-  <script src="http://localhost:8090/dist/airbender-all.js"></script>
+  <script src="http://localhost:9000/dist/airbender-all.js"></script>
   
   <!-- The developer's own Javascript, served from the developer's server. -->
   <script src="/scripts/my-app.js"></script>

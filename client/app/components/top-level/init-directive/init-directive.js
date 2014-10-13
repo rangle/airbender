@@ -9,8 +9,8 @@ angular.module('airbender.components.top-level.init-directive', [])
   directive.scope = true;
   directive.link = function (scope, iElement, iAttrs) {
     scope.siteTitle = iAttrs.abSetSiteTitle;
-    scope.getCurrentArticleId = function () {
-      return abRouter.getArticleId();
+    scope.getCurrentArticleSlug = function () {
+      return abRouter.getArticleSlug();
     };
   };
   return directive;

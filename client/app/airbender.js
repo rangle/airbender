@@ -1,23 +1,29 @@
-/* global angular */
+'use strict';
 
 angular.module('airbender', [
   'airbender.components.article',
   'airbender.components.graphs',
-  'airbender.components.top-level'
+  'airbender.components.top-level',
+  'koast'
 ])
 
 // The main airbender service exposed to the developer.
-.factory('airbender', ['$q',
-  function ($q) {
-    'use strict';
+.factory('airbender',
+  function (koast) {
     var service = {};
-    var optionsDeferred = $q.defer();
+    var serverUrl = 'http://localhost:9000';
+
     service.init = function (options) {
-      optionsDeferred.resolve(options);
+
+      koast.init({
+        baseUrl: serverUrl
+      });
+
+      // Koast server, expecting results with an envelope.
+      koast.setApiUriPrefix('/api/v1/');
+      koast.addEndpoint('articles', ':slug', {useEnvelope: true});
     };
-    service.getOptions = function () {
-      return optionsDeferred.promise;
-    };
+
     return service;
   }
-]);
+);

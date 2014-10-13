@@ -1,0 +1,39 @@
+{
+  "app": {
+    "portNumber": 9000,
+    "routes": [
+    {
+      "route": "/dist",
+      "type": "static",
+      "path" : "client/dist"
+    }, {
+      "route" : "/bower",
+      "type": "static",
+      "path" : "client/bower"
+    }, {
+      "route": "/api/v1",
+      "type": "module",
+      "module": "server/lib/api" // load the module in server/lib/api.js
+    }]
+  },
+  "authentication": {
+    "strategy": "oauth",
+    "maintenance": "token"
+  },
+  "cors": {
+    "origin": "*",
+    "headers": "X-Requested-With, Content-Type, Authorization",
+    "methods": "GET,POST,PUT,DELETE,OPTIONS, Authorization",
+    "credentials": true
+  },
+  "databases": [{
+    "host": "127.0.0.1",
+    "port": "27017",
+    "db": "airbender",
+    "schemas": "./server/schemas.js",
+    "handle": "_"
+  }],
+  "secrets": {
+    "authTokenSecret": "f61c73f6b40bea3aa0bf57be6f633e1f"
+  }
+}

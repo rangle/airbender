@@ -2,9 +2,8 @@ This is a sample app. To serve it, first install http-server:
 
     sudo npm install http-server -g
 
-Then `cd` into `client` and run http-server in it:
+Then run http-server it:
 
-    cd client
-    http-server
+    http-server www
 
 (You can also use any other HTTP server.)
