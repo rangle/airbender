@@ -1,6 +1,6 @@
-/* global angular */
+'use strict';
 
-angular.module('airbender-appState', ['ui.router'])
+angular.module('airbender.core.router', ['ui.router'])
 
 .config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
   function ($urlRouterProvider, $stateProvider, $locationProvider) {
@@ -15,6 +15,11 @@ angular.module('airbender-appState', ['ui.router'])
 
     $stateProvider.state('article', {
       url: '/article/{articleId}',
+      resolves: {
+        foo: function($stateParams) {
+          console.log('Transitioning to ' + $stateParams.articleId);
+        }
+      },
       views: {
         'top-level': {
           templateUrl: '/article.html',
@@ -25,7 +30,7 @@ angular.module('airbender-appState', ['ui.router'])
   }
 ])
 
-.service('appState', ['$stateParams', '$state',
+.service('abRouter', ['$stateParams', '$state',
   function ($stateParams, $state) {
     'use strict';
     var service = {};

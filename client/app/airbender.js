@@ -1,8 +1,9 @@
 /* global angular */
 
-angular.module('airbender', ['airbender-topLevelControllers',
-  'airbender-topLevelDirectives', 'airbender-articleDirectives',
-  'airbender-graphDirectives'
+angular.module('airbender', [
+  'airbender.components.article',
+  'airbender.components.graphs',
+  'airbender.components.top-level'
 ])
 
 // The main airbender service exposed to the developer.

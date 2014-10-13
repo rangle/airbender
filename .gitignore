@@ -1,0 +1,3 @@
+client/bower/*
+client/dist/
+node_modules/
