@@ -4,7 +4,7 @@ var mapper = koast.mongoMapper.makeMapper();
 function getAppKey(req) {
   // Hardcoding until we can handle async query decorators.
   var apps = {
-    'definibus.airbender.dev:9000' : {
+    'definibus.local.airbender.io:9000' : {
       'appKey': 'definibus'
     }
   };

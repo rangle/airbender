@@ -1,6 +1,6 @@
 [{
   "appKey": "definibus",
-  "serverDomain": "definibus.airbender.dev:9000",
+  "serverDomain": "definibus.local.airbender.io:9000",
   "tokens": [{
     "value": "qMaE5nakCRMYJ4kN5y8qJKQmtAn4qC9DkZvUEApuuQVvqPHF"
   }]

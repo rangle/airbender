@@ -4,6 +4,7 @@ angular.module('airbender', [
   'airbender.components.article',
   'airbender.components.graphs',
   'airbender.components.top-level',
+  'airbender.components.user',
   'koast'
 ])
 

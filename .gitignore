@@ -2,3 +2,4 @@ client/bower/*
 client/dist/
 data/articles.js
 node_modules/
+private/

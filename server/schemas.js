@@ -37,11 +37,11 @@ exports.schemas = [{
     username: {
       type: String
     }, // Assigned by us
-    appKey: {
-      // e.g. "definibus"
-      type: String,
-      required: true
-    },
+    // appKey: {
+    //   // e.g. "definibus"
+    //   type: String,
+    //   required: true
+    // },
     provider: {
       type: String,
       enum: ['google', 'twitter', 'facebook'],

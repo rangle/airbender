@@ -17,8 +17,15 @@
     }]
   },
   "authentication": {
-    "strategy": "oauth",
-    "maintenance": "token"
+    "strategy": "social",
+    "maintenance": "cookie"
+  },
+  "oauth": {
+    "google": {
+      "clientID": "596373591561-qnm7mfj62lqbt6prgcbpsa5hhel6lqn9.apps.googleusercontent.com",
+      "clientSecret": "env:GOOGLE_CLIENT_SECRET",
+      "callbackURL": "http://definibus.local.airbender.io:9000/auth/google/callback"
+    }
   },
   "cors": {
     "origin": "*",
