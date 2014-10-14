@@ -11,12 +11,11 @@ angular.module('airbender', [
 .factory('airbender',
   function (koast) {
     var service = {};
-    var serverUrl = 'http://localhost:9000';
 
     service.init = function (options) {
 
       koast.init({
-        baseUrl: serverUrl
+        baseUrl: options.domain
       });
 
       // Koast server, expecting results with an envelope.

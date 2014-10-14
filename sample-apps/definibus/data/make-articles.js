@@ -6,7 +6,7 @@ var articles = JSON.parse(articlesAsJson);
 
 articles.forEach(function(article) {
   var path = 'data/text/' + article.slug + '.txt';
-  article.app = 'de-finibus';
+  article.appKey = 'definibus';
   article.content = fs.readFileSync(path).toString();
 });
 
