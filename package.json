@@ -14,7 +14,7 @@
   "license": "MIT/X",
   "dependencies": {
     "gulp": "^3.8.8",
-    "koast": "^0.4.3-rc.3",
+    "koast": "^0.5.2",
     "rangle-gulp": "0.0.7"
   }
 }
