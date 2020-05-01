@@ -4,7 +4,9 @@
   "description": "There are two main parts to this app: the service (in the \"service\" directory) and developer's own app (in \"myApp\" directory). Those would normally be running on two different servers.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -15,6 +17,8 @@
   "dependencies": {
     "gulp": "^3.8.8",
     "koast": "^0.4.3-rc.3",
-    "rangle-gulp": "0.0.7"
-  }
+    "rangle-gulp": "0.0.7",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
